@@ -1,2 +1,7 @@
 .env
+.idea
+__pycache__
 bot.log
+venv
+linux_venv
+
