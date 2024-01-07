@@ -3,10 +3,11 @@ import os
 
 import SneakyLink
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+if __name__ == "__main__":
+    load_dotenv()
+    TOKEN = os.getenv('DISCORD_TOKEN')
 
-bot = SneakyLink.SneakyLinkBot()
+    bot = SneakyLink.SneakyLinkBot()
 
-if TOKEN is not None:
-    bot.run(str(TOKEN))
+    if TOKEN is not None:
+        bot.run(str(TOKEN))
